@@ -1,5 +1,7 @@
 # ICTrestroom
 
+## 사용된 MCU : Node MCU (esp32)
+
 ### 기능 설명-핸드드라이어
 
 1. 핸드드라이어 AC 팬모터를 이용한 송풍기능
