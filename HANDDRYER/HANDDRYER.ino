@@ -55,14 +55,9 @@ void setup() {
   if(isinf(calcR0)) {Serial.println("Warning: Conection issue founded, R0 is infite (Open circuit detected) please check your wiring and supply"); while(1);}
   if(calcR0 == 0){Serial.println("Warning: Conection issue founded, R0 is zero (Analog pin with short circuit to ground) please check your wiring and supply"); while(1);}
 
-   //WiFi.begin("Galaxy S9+7444", "ehdrhd12");
-  WiFi.begin("Galaxy S20+5G고동환", "ttsj0022");
-  //WiFi.begin("wmsadmin1", "12345678");
- //WiFi.begin("Makerspace_Team", "5z6669NN");
-  // WiFi.begin("happyyc_7", "happyyc1318");
-  //WiFi.begin("making3_5G", "making3cmd");
-  //WiFi.begin("making", "making3cmd");
-  //WiFi.begin("U+Net7404", "@B556B659P");
+   
+  WiFi.begin("wifi name", "wifi Pw");
+  
   while(WiFi.status() != WL_CONNECTED){
     delay(500);
     Serial.print(".");
