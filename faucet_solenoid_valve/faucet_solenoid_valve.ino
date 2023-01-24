@@ -48,14 +48,9 @@ void pulseCounter()   //유량센서 인터럽트 함수 (펄스값만 증가)
 void setup() {
   // Set pin mode 
   //본인의 와이파이 주소 입력
-  //WiFi.begin("happyyc_11", "happyyc1318");
-  //WiFi.begin("메이킹3층", "12345678");
-  WiFi.begin("Galaxy S20+5G고동환", "ttsj0022");
-  //WiFi.begin("Makerspace_Team", "5z6669NN");
-  //WiFi.begin("wmswifi", "12345678");
-  //WiFi.begin("wmsadmin", "12345678");
-  //WiFi.begin("Galaxy S9+7444", "ehdrhd12");
-  //WiFi.begin("making", "making3cmd");
+  
+  WiFi.begin("wifi id", "wifi pw");
+  
   while(WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(" . ");
